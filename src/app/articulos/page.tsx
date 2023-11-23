@@ -1,7 +1,7 @@
 import Articulos from "@/components/Articulos"
 
 async function getData() {
-    const res = await fetch("http://localhost:4000/articulos", { cache: 'no-store' })
+    const res = await fetch("http://localhost:5000/articulos", { cache: 'no-store' })
     const data = res.json()
     return data
 }

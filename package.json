@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "server": "json-server --watch ./src/app/api/articulosdb.json --port 4000"
+    "server": "json-server --watch ./src/app/api/articulosdb.json --port 5000"
   },
   "dependencies": {
     "@types/node": "20.5.7",

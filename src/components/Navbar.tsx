@@ -25,7 +25,6 @@ const Navbar = () => {
         }
     ]
 
-
     return (
         <nav className="bg-blue-900 sticky top-0 z-[1]">
             <ul className="flex justify-evenly m-8">
