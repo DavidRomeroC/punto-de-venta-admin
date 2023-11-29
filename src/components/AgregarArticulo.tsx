@@ -22,7 +22,15 @@ const AgregarArticulo = () => {
             {
                 modalAdd
                     ?
-                    <div> Formulario  </div>
+                    <div className="fixed w-screen h-screen bg-slate-300 z-0 bg-opacity-90 -translate-y-4 " >
+                        <div className="border-2 border-white w-full h-10 flex justify-around" >
+                            <div>AGREGAR ARTICULO</div>
+                            <button onClick={handleShow} className="" >CERRAR X</button>
+                        </div>
+
+                    </div>
+                    // <div className="self-center w-9/12 border-2 border-black h-[720px] fixed z-0 bg- rounded-3xl">
+                    // </div>
                     :
                     <div className="w-9/12 flex self-center justify-around h-24 ">
                         <button
