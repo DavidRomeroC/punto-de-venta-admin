@@ -15,22 +15,40 @@ const AgregarArticulo = () => {
         }
     }
 
-    console.log(modalAdd)
+    const addProduct = () => {
+
+    }
 
     return (
         <>
             {
                 modalAdd
                     ?
-                    <div className="fixed w-screen h-screen bg-slate-300 z-0 bg-opacity-90 -translate-y-4 " >
-                        <div className="border-2 border-white w-full h-10 flex justify-around" >
-                            <div>AGREGAR ARTICULO</div>
-                            <button onClick={handleShow} className="" >CERRAR X</button>
+                    <div className="border-2 border-red-950 fixed w-screen h-screen bg-[#F0F2F5] z-0 bg-opacity-95 -translate-y-4 self-center " >
+                        <div className="border-2 border-white w-full h-10 flex justify-around bg-white shadow-2xl my-2" >
+                            <div className="text-lg font-bold" >AGREGAR ARTICULO</div>
+                        </div>
+                        <div className="w-full h-auto flex justify-center my-4 " >
+                            <div className="overflow-y-scroll w-9/12 h-96 bg-[#FFFFFF] shadow-2xl rounded-3xl" >
+                                
+                            </div>
+                        </div>
+                        <div className="w-full flex justify-center">
+                            <div className="w-9/12 flex justify-evenly" >
+                                <button
+                                    onClick={addProduct}
+                                    className="w-1/4 h-10 bg-green-800 text-white rounded-lg" >
+                                    AGREGAR PRODUCTO
+                                </button>
+                                <button
+                                    onClick={handleShow}
+                                    className="w-1/4 h-10 bg-red-800 text-white rounded-lg">
+                                    CERRAR
+                                </button>
+                            </div>
                         </div>
 
                     </div>
-                    // <div className="self-center w-9/12 border-2 border-black h-[720px] fixed z-0 bg- rounded-3xl">
-                    // </div>
                     :
                     <div className="w-9/12 flex self-center justify-around h-24 ">
                         <button
