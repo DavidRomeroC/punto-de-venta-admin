@@ -30,7 +30,7 @@ const AgregarArticulo = () => {
                         </div>
                         <div className="w-full h-auto flex justify-center my-4 " >
                             <div className="overflow-y-scroll w-9/12 h-96 bg-[#FFFFFF] shadow-2xl rounded-3xl" >
-                                
+
                             </div>
                         </div>
                         <div className="w-full flex justify-center">
@@ -42,8 +42,16 @@ const AgregarArticulo = () => {
                                 </button>
                                 <button
                                     onClick={handleShow}
-                                    className="w-1/4 h-10 bg-red-800 text-white rounded-lg">
-                                    CERRAR
+                                    className="w-1/4 h-10 
+                                            bg-red-800 
+                                            text-white 
+                                            rounded-lg
+                                            duration-300
+                                            hover:bg-red-600
+                                            hover:duration-300
+                                            hover:border-4
+                                            hover:border-black">
+                                    CERRA
                                 </button>
                             </div>
                         </div>
